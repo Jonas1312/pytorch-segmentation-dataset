@@ -1,10 +1,10 @@
 # PyTorch Segmentation Dataset Loader
 
-Custom segmentation dataset class for torchvision.
+Custom segmentation dataset class for `torchvision`.
 
 ## Usage
 
-Can be used with torchvision.transforms:
+Can be used with `torchvision.transforms`:
 
 ``` python
 from utils import SegmentationDataset
@@ -37,3 +37,15 @@ dataset = SegmentationDataset(
     transform=transform,
 )
 ```
+
+## Note
+
+- `Normalize`, `Lambda`, `Pad`, `ColorJitter` and `RandomErasing` won't be applied to masks by default
+- Images from: https://www.ntu.edu.sg/home/asjfcai/Benchmark_Website/benchmark_index.html
+
+## Helpful Links
+
+- https://github.com/sshuair/torchvision-enhance
+- https://github.com/jbohnslav/opencv_transforms
+- https://github.com/aleju/imgaug
+- https://github.com/albu/albumentations
