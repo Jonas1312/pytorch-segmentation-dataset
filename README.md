@@ -1,6 +1,6 @@
 # PyTorch Segmentation Dataset Loader
 
-Custom segmentation dataset class for `torchvision`.
+Custom segmentation dataset class for `torchvision`. Applies data augmentation to both images and segmentations. 
 
 ## Usage
 
